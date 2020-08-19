@@ -1,15 +1,4 @@
-/**
- * We have two functions, `sum` and `subtract` ,
- * that are ready to be tested.
- *
- * Task: check if the results are the respects.
- *
- *            **BONUS**
- * Throw an error if the test fails.
- *
- *
- * Execute: Use `node lessons/simple.js` to run the test.
- */
+
 
 const { sum, subtract } = require('../math')
 // Start of the exercise
@@ -40,12 +29,6 @@ test(`Addition operation`, async () => {
 
 })
 
-console.log("All tests Pass!")
-/**
- * Hint: there's no magic, just the most straightforward conditional statement.
- *
- * Answer: Checkout the master branch for the answer.
- */
 
 async function test(title, callback) {
     try {
