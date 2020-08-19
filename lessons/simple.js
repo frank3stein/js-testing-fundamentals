@@ -29,13 +29,13 @@ const { sum, subtract } = require('../math')
 //     throw new Error(`${result} of subtract is not expected to be ${expected}`)
 // }
 // start of exercise ends
-test(`Substraction operation`, () => {
+test(`Substraction operation`, async () => {
     const result = await subtract(7, 4)
     expect(result).toBe(3)
 })
 
-test(`Addition operation`, () => {
-    const result = sum(4, 6)
+test(`Addition operation`, async () => {
+    const result = await sum(4, 6)
     expect(result).toBe(10)
 
 })
@@ -47,9 +47,9 @@ console.log("All tests Pass!")
  * Answer: Checkout the master branch for the answer.
  */
 
-function test(title, callback) {
+async function test(title, callback) {
     try {
-        callback()
+        await callback()
         console.log(title)
     } catch (error) {
         console.error(`x ${title}`)
